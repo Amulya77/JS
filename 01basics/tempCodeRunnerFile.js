@@ -1,1 +1,3 @@
-accountId = 2345
+console.log(null == 0);
+console.log(null >=0);
+console.log(null > 0);
