@@ -51,7 +51,6 @@ anothername="clark";
 console.log(myname); //clark
 console.log(anothername); //clark
 
-
 let userone={
     name: 'bruce',
     age: 30
@@ -61,5 +60,19 @@ let usertwo=userone;
 usertwo.age=45;
 console.log(userone.age); //45
 console.log(usertwo.age); //45
+
+//objects are passed by reference, not value
+//when we pass object to a function, it's like passing the address of that object
+
+function changeName(person){
+   person.name="Clark Kent";
+}
+
+var superman = {name:"Bruce Wayne"};
+console.log(superman.name); // Bruce Wayne
+
+changeName(superman);
+console.log(superman.name); // Clark Kent
+
 
 
