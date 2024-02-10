@@ -63,3 +63,18 @@ console.log(1+"2");//12
 console.log(1+2);  //3
 console.log("1"+2+2);//122
 console.log(1+2+"2");//32
+
+/**************/
+
+console.log(1<2); //true
+console.log(1<=2); //true
+console.log(1>2); //false
+console.log(1>=2); //false
+console.log(1==2); //false
+console.log(1!=2); //true
+console.log(1===2); //false
+console.log(1!==2); //true
+/************************ */
+let gamecounter=100
+gamecounter++;
+console.log(gamecounter); //101
