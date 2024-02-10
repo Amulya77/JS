@@ -26,3 +26,40 @@ console.log(typeof heros); //object
 console.log(typeof myobj); //object 
 console.log(typeof myfunction); //function
 
+
+
+
+///////////////////////////////+++++
+
+
+// stack(primitive), heap(non-primitive)
+// heap: reference types are stored in heap
+// stack: primitive types are stored in stack
+
+//primitive types are immutable
+//reference types are mutable
+//primitive types are stored in stack
+//reference types are stored in heap
+
+let myname="bruce";
+let anothername=myname;
+console.log(anothername); //bruce
+myname="clark";
+console.log(anothername); //bruce
+
+anothername="clark";
+console.log(myname); //clark
+console.log(anothername); //clark
+
+
+let userone={
+    name: 'bruce',
+    age: 30
+}
+
+let usertwo=userone;
+usertwo.age=45;
+console.log(userone.age); //45
+console.log(usertwo.age); //45
+
+
