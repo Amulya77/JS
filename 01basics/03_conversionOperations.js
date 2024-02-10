@@ -55,3 +55,11 @@ let str1="Amulya";
 let str2="Bhagat";
 let str3=str1+str2;
 console.log(str3); //AmulyaBhagat
+
+/************************** */
+
+console.log("1"+2);//12
+console.log(1+"2");//12
+console.log(1+2);  //3
+console.log("1"+2+2);//122
+console.log(1+2+"2");//32
