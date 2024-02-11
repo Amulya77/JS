@@ -42,5 +42,6 @@ console.log(newDate.getDay());//0 to 6 Sun to Sat
 
 
 newDate.toLocaleString('default',{
-    weekday:"long"
-})
+    weekday:"long",
+    timeZone:"Asia/Kolkata"
+});
