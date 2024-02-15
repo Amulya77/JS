@@ -65,6 +65,7 @@ console.log(loginUserMessage2(""));       // Please provide a username
 console.log(loginUserMessage2());         // Please provide a username
 
 function loginUserMessage2_(username){
+//function loginUserMessage2_(username="Tanisha"){///this is default parameter value if nothing or undefined is passed as input it will be printed as Tanisha
    // if(username===undefined){
     if(!username){
        console.log("Please provide a username");
@@ -75,4 +76,5 @@ function loginUserMessage2_(username){
 
 console.log(loginUserMessage2_("sonam")); // Welcome sonam
     
-console.log(loginUserMessage2_()); //        // Please provide a username
+console.log(loginUserMessage2_());// Please provide a username
+//undefined is also printed because no input is given to the function and it is not returning anything
