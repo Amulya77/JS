@@ -65,3 +65,5 @@ console.log(Object.values(tinderUser));//[ '123abc', 'Rahul', false ]//returns t
 //the data type of the Object.values() is also an array
 
 console.log(Object.entries(tinderUser));//[ [ 'id', '123abc' ], [ 'name', 'Rahul' ], [ 'isLoggedIn', false ] ]//returns the key-value pairs of the object
+
+console.log(tinderUser.hasOwnProperty("id"));//true;checking whether "id" property exists or not
