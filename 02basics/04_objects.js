@@ -67,3 +67,37 @@ console.log(Object.values(tinderUser));//[ '123abc', 'Rahul', false ]//returns t
 console.log(Object.entries(tinderUser));//[ [ 'id', '123abc' ], [ 'name', 'Rahul' ], [ 'isLoggedIn', false ] ]//returns the key-value pairs of the object
 
 console.log(tinderUser.hasOwnProperty("id"));//true;checking whether "id" property exists or not
+
+
+
+
+
+
+const course={
+    name:"Javascript",
+    price:100,
+    courseInstructor:"Rahul"
+}
+
+course.courseInstructor="Sonam";//updating the value of the property
+
+const { courseInstructor }=course;//destructuring the object and getting only the value of the property''
+console.log(courseInstructor);//Sonam
+
+//lets say courseInstructor is big name
+const{courseInstructor:instructor}=course;//destructuring the object and getting only the value of the property and renaming it to insrtuctor
+console.log(instructor);//Sonam
+
+
+// {
+//     "name":"Javascript",
+//     "price":"free",
+//     "courseInstructor":"Rahul"
+// }
+
+[
+    {},
+    {},
+    {}
+
+]
