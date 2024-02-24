@@ -1,0 +1,59 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.highlight{
+    color: red
+}
+
+.canvas {
+    width: 80%;
+    text-align: center;
+}
+h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center; /* Adjust as needed */
+}
+
+
+  .canvas {
+    margin: 100px auto; /* Adjust the top and bottom margin as needed */
+    width: 80%;
+    text-align: center;
+    border: 2px solid black; /* Adding border for visualization */
+    padding: 2
+    0px; /* Adding padding for visualization */
+}
+  
+  .button {
+    width: 100px;
+    height: 100px;
+    border: solid black 2px;
+    display: inline-block;
+    margin: 10px;
+    justify-content: center;
+  }
+  .CEN{
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  #grey {
+    background: grey;
+  }
+  
+  #white {
+    background: white;
+  }
+  #blue {
+    background: blue;
+  }
+  #yellow {
+    background: yellow;
+  }
+  
