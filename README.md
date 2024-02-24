@@ -1,1 +1,1 @@
-JS tutorial
+JavaScript tutorial
