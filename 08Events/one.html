@@ -70,24 +70,55 @@
 
 
     
+/////////-------------the entire thing below is commented-----------------------------////////////////
 
+    // document.getElementById('images').addEventListener('click', function(e){
+    //     console.log("clicked inside the ul");
+    // },false);
 
-    document.getElementById('images').addEventListener('click', function(e){
-        console.log("clicked inside the ul");
-    },false);
-
-    document.getElementById('owl').addEventListener('click', function(e){
-        console.log("owl clicked");
-        e.stopPropagation();//this will stop the event from bubbling up to the parent element
-    },false);
+    // document.getElementById('owl').addEventListener('click', function(e){
+    //     console.log("owl clicked");
+    //     e.stopPropagation();//this will stop the event from bubbling up to the parent element
+    // },false);
     
 
 
-    document.getElementById('google').addEventListener('click', function(e){
-        e.preventDefault();//this will stop the default action of the event
-        e.stopPropagation();
-        console.log("google clicked");
-    },false);
+    // document.getElementById('google').addEventListener('click', function(e){
+    //     e.preventDefault();//this will stop the default action of the event
+    //     e.stopPropagation();
+    //     console.log("google clicked");
+    // },false);
+////////////------------the entire thing is commented above-----------------------//////////////////
+
+        document.querySelector('#images').addEventListener('click',function(e){
+           // console.log(e.target);//this will give the element that was clicked for example if we click on the owl image it will give owl image element
+           //console.log(e.target.parentNode);//this will give the parent element of the clicked element
+            console.log(e.target.tagName);//this will give the name of the tag of the clicked element    
+            
+            if (e.target.tagName === 'IMG') {
+                console.log(e.target.id);//this will give the id of the clicked image
+                let removeIt= e.target.parentNode;
+                removeIt.remove();
+            }
+
+
+            //---------TIME STAMP 3:57 JS in oneshot in HINDI part 2-----------------------///
+
+            // ```When we are performing the click it will remove everythinng the UL and IMG tags also,
+            // so to prevent that we will use the if condition to check if the clicked element is an image or not```
+
+
+            // let removeIt= e.target.parentNode;
+            // removeIt.remove();//this will remove the parent element of the clicked element
+            //removeIt.parentNode.removeChild(removeIt);//this will remove the parent element of the clicked element
+            
+            //the differene between the two is that the first one will remove the parent element of the clicked element and the second one will remove the parent element of the parent element of the clicked element
+
+
+        })
+
+
+
 
 
 </script>
