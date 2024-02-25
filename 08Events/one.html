@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML EVENTS</title>
+</head>
+<body style="background-color: #414141; color: aliceblue;"></body>
+    <h2>Amazing image</h2>
+    <div >
+        <ul id="images">
+            <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop"></li>
+            <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" ></li>
+            <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+   </div>
+</body>
+<script>
+    // document.getElementById('owl').onclick = function(){
+    //     alert('You clicked on the owl image');
+    // }
+
+    //attachEvent()
+    //JQuery- on()
+
+    // document.getElementById('owl').addEventListener('click', function(){
+    //     alert('You clicked on the owl image');
+    // },false);//false is the third parameter, it is optional and indicates that we are not going to use any other event listener
+    //event bubling, event capturing
+
+    //type,timestamp,defaultPrevented
+    //target, currentTarget, relatedTarget
+    //toElement, srcElement, fromElement
+    //clientX, clientY, screenX, screenY
+    //altkey, ctrlKey, shiftKey, metaKey,keyCode
+    
+    
+    ///////////--- third parameter= false is for event bubbling 
+    // document.getElementById('images').addEventListener('click', function(e){
+    //     console.log("clicked inside the ul");
+    // },false);
+
+    // document.getElementById('owl').addEventListener('click', function(e){
+    //     console.log("owl clicked");
+    // },false);
+    //--------------------------------------------------------------------------------
+    ///////////-----similarly= true is for event capturing
+    // document.getElementById('images').addEventListener('click', function(e){
+    //     console.log("clicked inside the ul");
+    // },true);
+
+    // document.getElementById('owl').addEventListener('click', function(e){
+    //     console.log("owl clicked");
+    // },true);
+    //--------------------------------------------------------------------------------
+
+    //the difference between event bubbling and event capturing is that----
+    // event bubbling starts from the target element and goes up to the root element,
+    // while event capturing starts from the root element and goes down to the target element.
+
+    //the benefit of event bubbling is that it allows you to capture the event after it reaches the target element.
+    //This is useful when you want to capture the event after it reaches the target element.
+
+
+    //the benefit of event capturing is that it allows you to capture the event before it reaches the target element.
+    //This is useful when you want to intercept the event before it reaches the target element.
+
+
+    
+
+
+    document.getElementById('images').addEventListener('click', function(e){
+        console.log("clicked inside the ul");
+    },false);
+
+    document.getElementById('owl').addEventListener('click', function(e){
+        console.log("owl clicked");
+        e.stopPropagation();//this will stop the event from bubbling up to the parent element
+    },false);
+    
+
+
+    document.getElementById('google').addEventListener('click', function(e){
+        e.preventDefault();//this will stop the default action of the event
+        e.stopPropagation();
+        console.log("google clicked");
+    },false);
+
+
+</script>
+</html>
