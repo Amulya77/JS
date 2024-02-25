@@ -1,0 +1,45 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#height,
+#weight {
+  width: 150px;
+  height: 25px;
+  margin-top: 30px;
+}
+
+#weight-guide {
+ text-align: center;
+
+}
+
+#results {
+  font-size: 35px;
+  margin-top: 20px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+
+
+h1 {
+  padding-left: 15px;
+  padding-top: 25px;
+  
+}
+
+.container{
+    background-color: gray;
+    padding: 20px;
+    border: 3px solid black;
+}
+
+.buttn{
+    display: flex;
+    justify-content: center;
+}
