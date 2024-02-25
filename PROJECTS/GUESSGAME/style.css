@@ -51,6 +51,19 @@ html, body {
     /* margin-left: 50px; */
   }
   
+  .button {
+    color: #fff; /* Set the text color */
+    background-color: #161616; /* Set the background color */
+    border-radius: 10px;
+    /* font-size: 20px; */
+    border-style: none;
+    margin-top: 50px;
+  }
+  
+  .button:hover {
+    cursor: pointer; /* Add a pointer cursor on hover */
+  }
+  
   #subt {
     background-color: #161616;
     color: #ffffff;
@@ -90,9 +103,10 @@ html, body {
   
   
   h1 {
-    
+    background-color: #000;
     color: #fff;
     text-align: center;
+   
   }
   
   p {
