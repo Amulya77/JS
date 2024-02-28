@@ -30,12 +30,14 @@ document.querySelector('.check').addEventListener('click', function() {
     document.querySelector('.number').textContent = number;//Secret number in the UI
     document.querySelector('body').style.backgroundColor = '#60b347';
     document.querySelector('.number').style.width = '30rem';
+       
 
     if(score > highscore){
         highscore = score;
         document.querySelector('.highscore').textContent = highscore;
     }   
-    
+}
+
     else if (guess > number){
 
         if(score > 1){
