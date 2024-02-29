@@ -208,3 +208,5 @@ promise.then((message) => {
 // - **Timers and Delays**: Setting timers or delays in programming languages allows the program to schedule tasks to be executed in the future without blocking the main execution thread.
 
 // Overall, asynchronous operations are crucial for building responsive and efficient software systems, especially in scenarios where tasks may take a variable amount of time to complete, such as network communication or I/O operations.
+
+
