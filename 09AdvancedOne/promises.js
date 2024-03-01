@@ -179,6 +179,7 @@ promise.then((message) => {
 
 // An asynchronous operation, in programming, refers to a task or operation that doesn't block the execution of the program while waiting for it to complete. Instead, the program continues to run, and the result of the asynchronous operation is handled separately once it's finished.
 
+
 // Here's a simple analogy to understand asynchronous operations:
 
 // ### Analogy: Waiting for a Package Delivery
