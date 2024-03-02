@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movable Div with Position</title>
+    <style>
+        #movableDiv {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            cursor: grab;
+        }
+    </style>
+</head>
+<body>
+
+<div id="movableDiv">
+    Drag me!
+</div>
+
+<script>
+    var draggableElement = document.getElementById('movableDiv');// Get the draggable element
+    var offsetX, offsetY;// Variables to keep track of mouse position
+
+    function handleMouseDown(event) {// Function to handle mouse down event
+        offsetX = event.clientX - draggableElement.offsetLeft;// Calculate the offset between mouse position and the top-left corner of the element
+        offsetY = event.clientY - draggableElement.offsetTop;
+
+        draggableElement.style.cursor = 'grabbing';// Change cursor style while dragging
+
+        document.addEventListener('mousemove', handleMouseMove);// Attach event listeners for mousemove and mouseup events
+        document.addEventListener('mouseup', handleMouseUp);// Attach event listeners for mousemove and mouseup events
+    }
+
+    function handleMouseMove(event) {// Function to handle mouse move event
+        var newX = event.clientX - offsetX;
+        var newY = event.clientY - offsetY;
+
+        draggableElement.style.left = newX + 'px';
+        draggableElement.style.top = newY + 'px';
+
+        // Print the position of the div
+        console.log('Position X: ' + newX + ', Position Y: ' + newY);
+    }
+
+    
+    function handleMouseUp() {
+        draggableElement.style.cursor = 'grab';
+
+        document.removeEventListener('mousemove', handleMouseMove);
+        document.removeEventListener('mouseup', handleMouseUp);
+    }
+
+    draggableElement.addEventListener('mousedown', handleMouseDown);
+</script>
+
+</body>
+</html>
