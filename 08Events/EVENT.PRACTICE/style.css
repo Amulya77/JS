@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #212121;
+    color: #fff;
+}
+
+button{
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #4cd0da;
+    color: #fff;
+    
+}
+
+button:hover{
+    background-color: #f4ab36;
+}
+
+hr{
+    color: #fff  ;
+}
+
+#one{
+    background-color: #4c4c4c;
+    margin-bottom: 20px;
+}
+
+#two{
+    background-color: #4c4c4c;
+    margin-bottom: 20px;
+}
+
+#three{
+    background-color: #4c4c4c;
+    margin-bottom: 20px;
+}

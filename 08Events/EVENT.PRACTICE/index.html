@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="one">
+    <h1>Inline Events</h1>
+    <button onclick="alert('Welcome')">Click-Me</button>
+    <button ondblclick="alert('Welcome2')">Double-Click-Me</button>
+    <button onmouseover="alert('Welcome3')">MouseOver</button>
+    </div>
+    
+    <div id="two">
+    <h1>DOM Event Handler</h1>
+    <button id="myBtn-1">Click-Me</button>
+    <button id="myBtn-2">Click-Me-Again</button>
+    <button id="myBtn-3">MouseOver</button>
+    </div>
+
+    <div id="three">
+    <h1>Event Listener</h1>
+    <button id="Btn-1">Click Me!</button>
+    <button id="Btn-2">Click Me Again!</button>
+    <button id="Btn-3">MouseOver</button>
+    </div>
+
+    <script>
+        document.getElementById('myBtn-1').onclick=function(){
+            alert('Welcome');
+        }
+        document.getElementById('myBtn-2').ondblclick=function(){
+            alert('Welcome Again');
+        }
+        document.getElementById('myBtn-3').onmouseover=function(){
+            alert('Welcome Again');
+        }
+
+
+
+        //addEventListener
+
+        document.getElementById('Btn-1').addEventListener('click',function(){
+            alert('Welcome');
+        });
+
+        document.getElementById('Btn-2').addEventListener('dblclick',function(){
+            alert('Welcome Again');
+
+        });
+
+        document.getElementById('Btn-3').addEventListener('mouseover',function(){
+            alert('Welcome Again');
+        });
+
+
+
+
+    </script>
+
+</body>
+</html>

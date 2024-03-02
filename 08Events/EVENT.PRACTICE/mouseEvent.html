@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Rectangle{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(93, 93, 93);
+            margin-bottom:5px;
+        }
+
+        .addTransition{
+            border-radius: 50%;
+            background-color: yellow;
+            transition: all 1s;
+        }
+    </style>
+
+</head>
+<body>
+    <section>
+        <div class="Rectangle"></div>
+        <button id="myBtn">Click-Me</button>
+    </section>
+
+    <script>
+
+        let myBtn=document.getElementById('myBtn');
+        let Rectangle=document.querySelector('.Rectangle');
+
+        const handleMouseEvents=()=>{
+            console.log('Clicked');
+            Rectangle.style.backgroundColor='red';
+        }
+       
+        const handleMouseEvent3=(e, color)=>{
+            e.target.style.backgroundColor=color;
+        }
+
+        const handleMouseEvent4=()=>{
+            console.log('Mouse Over-div-button-transition');
+            myBtn.classList.add('addTransition');
+        }
+        
+
+
+        myBtn.addEventListener('click',handleMouseEvents);
+
+        myBtn.addEventListener('dblclick',function(){
+            console.log('Double Clicked');
+            Rectangle.style.backgroundColor='blue';
+        });
+        
+        Rectangle.addEventListener('mouseover',(e)=>{
+            handleMouseEvent3(e, 'green');
+        });
+        
+        Rectangle.addEventListener('mouseover',handleMouseEvent4);
+
+
+    </script>
+
+
+
+</body>
+</html>
