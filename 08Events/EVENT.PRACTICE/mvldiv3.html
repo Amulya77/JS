@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movable Div</title>
+    <style>
+        #movableDiv {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            position: absolute;
+            top: 50px;/*50px from top*/
+            left: 50px;/*50px from left*/
+            cursor: grab;
+        }
+    </style>
+</head>
+<body>
+
+<div id="movableDiv">
+    Drag me!
+</div>
+
+<p id="mousePosition"></p>
+
+<script>
+    // Get the draggable element
+    var draggableElement = document.getElementById('movableDiv');
+
+    // Variables to keep track of mouse position and draggable element position
+    var offsetX, offsetY;
+    var mouseX, mouseY;
+    var divX, divY;
+
+    // Function to handle mouse down event
+    function handleMouseDown(event) {
+        // Calculate the offset between mouse position and the top-left corner of the element
+        offsetX = event.clientX - draggableElement.offsetLeft;
+        offsetY = event.clientY - draggableElement.offsetTop;
+
+        // Change cursor style while dragging
+        draggableElement.style.cursor = 'grabbing';
+
+        // Attach event listeners for mousemove and mouseup events
+        document.addEventListener('mousemove', handleMouseMove);
+        document.addEventListener('mouseup', handleMouseUp);
+    }
+
+    // Function to handle mouse move event
+    function handleMouseMove(event) {
+        // Update the position of the draggable element based on mouse position
+        draggableElement.style.left = event.clientX - offsetX + 'px';
+        draggableElement.style.top = event.clientY - offsetY + 'px';
+
+        // Update mouse position
+        mouseX = event.clientX;
+        mouseY = event.clientY;
+
+        // Update draggable element position
+        divX = draggableElement.offsetLeft;
+        divY = draggableElement.offsetTop;
+
+        // Display mouse position and draggable element position on the webpage
+        document.getElementById('mousePosition').innerHTML = 'Mouse X: ' + mouseX + ', Mouse Y: ' + mouseY +
+            '<br>Div X: ' + divX + ', Div Y: ' + divY;
+    }
+
+    // Function to handle mouse up event
+    function handleMouseUp() {
+        // Reset cursor style
+        draggableElement.style.cursor = 'grab';
+
+        // Remove event listeners for mousemove and mouseup events
+        document.removeEventListener('mousemove', handleMouseMove);
+        document.removeEventListener('mouseup', handleMouseUp);
+    }
+
+    // Attach event listener for mousedown event on the draggable element
+    draggableElement.addEventListener('mousedown', handleMouseDown);
+</script>
+
+</body>
+</html>
