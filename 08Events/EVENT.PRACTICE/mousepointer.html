@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+   
+    <p id="mousePosition"></p>
+
+</body>
+
+<script>
+// Add event listener for mousemove event on the document
+document.addEventListener('mousemove', handleMouseMove);
+
+// Function to handle mouse move event
+function handleMouseMove(event) {
+    // Retrieve current mouse position
+    var mouseX = event.clientX;
+    var mouseY = event.clientY;
+
+    // Print mouse position in console
+    console.log('Mouse X:', mouseX, 'Mouse Y:', mouseY);
+
+    // Display mouse position on the webpage
+    document.getElementById('mousePosition').innerHTML = 'Mouse X: ' + mouseX + ', Mouse Y: ' + mouseY;
+}
+
+</script>
+</html>
