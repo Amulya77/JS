@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centering a Div</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            color: white;
+          
+        }
+        .center-div {
+            display: block;
+            width: 300px; /* Set your desired width */
+            height: 300px; /* Set your desired height */
+            background-color: #541919; /* Set the background color */
+            position: absolute; /* Position the element absolutely */
+            top: 50%; /* Place the top edge of the element at 50% of the containing block's height */
+            left: 50%; /* Place the left edge of the element at 50% of the containing block's width */
+            transform: translate(-50%, -50%); /* Move the element back by 50% of its own width and height */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="center-div">
+        <!-- Your content goes here -->
+        <h1>Hello, world!</h1>
+    </div>
+</body>
+</html>
