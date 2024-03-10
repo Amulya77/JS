@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  #game-container {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 400px;
+  }
+  
+  h1 {
+    margin-bottom: 15px;
+  }
+  
+  #jumbled-word-container {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  #input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  
+  #user-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 180px;
+  }
+  
+  #check-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #check-button:hover {
+    background-color: #3e8e41;
+  }
+  
+  #result {
+    font-style: italic;
+    color: green;
+  }
+  
+  @media (max-width: 500px) {
+    #game-container {
+      width: 90%;
+    }
+  
+    #user-input {
+      width: 150px;
+    }
+  }
+  
