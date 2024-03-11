@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --line-border-fill: #3498db;
+    --line-border-empty: #e0e0e0;
+  }
+
+
+body{
+    background-color: rgb(255, 246, 235);
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+}
+
+.progress-container{
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    width: 400px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.btn{
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 8px 30px;
+    margin: 5px;
+}
+
+.btn:hover{
+    background-color: #00b33c;
+}
+
+.circle {
+    background-color: rgb(245, 179, 179);
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    color: grey;
+    border: 3px solid gray;
+    position: relative; /* Add this line */
+    z-index: 1; /* Add this line */
+}
+
+.progress-container::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 100%;
+    background-color: var(--line-border-empty);
+    z-index: -1;
+}
+
+
+/* The ::before pseudo-element in CSS allows you to insert content before the content of an element specified by the CSS selector. It is a generated element that is inserted as the first child of the selected element.
+
+In your case, .progress-container::before is targeting the pseudo-element that is inserted before the content of the element with the class progress-container. */
+
+
+.circle.active{
+    background-color: #cdd3d9;
+    color: #000000;
+    border: 3px solid #007bff;
+}
+
+
+.progress{
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 0%;
+    z-index: -1;
+    transition: 0.4s ease;
+    background-color: var(--line-border-fill);
+    position: absolute;
+}
+
+
+
+
+/* Add styles for the arrow symbols */
+.buttons .btn span {
+    font-size: 18px; /* Adjust the size of the arrow */
+    line-height: 1; /* Ensure the arrow is vertically centered */
+}
