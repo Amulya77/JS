@@ -384,6 +384,9 @@ h1{
     margin: 0;
 
 }
+#fmenu>h5:hover {
+    color: #319795; /* Teal-600 color */
+     }
 
 h4{
     font-weight: 900;
@@ -394,4 +397,43 @@ h4{
 h4:hover{
     color: #000000;
     transition: color 0.3s ease;
+}
+
+
+
+
+
+/*****************************neecheprokrc**************/
+
+
+
+/* Flex item */
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    padding: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/* Flex item */
+.flex-item {
+    background-color: #fff;
+    border: 1px solid #1a1717;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    flex: 1 0 300px; /* Flex item will grow and shrink to fit container */
+    width: 300px; /* Set width */
+    height: 300px; /* Set height to make it square */
+}
+
+/* Hover effect */
+.flex-item:hover {
+    transform: translateY(-10px); /* Adjust the distance */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+    background-color: rebeccapurple;
 }
