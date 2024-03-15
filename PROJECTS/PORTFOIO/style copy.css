@@ -1,6 +1,7 @@
 
 
-
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 
 * {
@@ -132,6 +133,10 @@ h1{
 
 
 
+/* #small-img-div:hover #overlay {
+    background-color: rgba(0, 255, 106, 0.163); 
+} */
+
 #small-img-div{
     cursor: pointer;
     position: absolute;
@@ -151,7 +156,6 @@ h1{
     width: 420px;
     border: #fff solid 2px;
 } 
-
 
 /* @keyframes slideUpDown {
     0% {
@@ -190,7 +194,7 @@ h1{
     right: 1%;
     top: 5%;
     transform-origin: 0% 0%;
-    animation: scrollUp 10s linear infinite;
+    animation: scrollUp 15s linear infinite;
     white-space: nowrap; /* Ensure the text stays on one line */
 } 
 
@@ -218,7 +222,7 @@ h1{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 400px;
+    width: 600px;
     left: 19%;
     top: 5%;
 }
@@ -236,8 +240,71 @@ h1{
     color: #fff;
 }
 
+#sound{
+    /* font-size: small; */
+    padding: 7px;
+    background-color:none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+.sound-cloud{
+    font-size: 1.2rem;
+    margin: 7px;
+    color: #f50057;
+}
+.on-off{
+    cursor: pointer;
+    margin-left: 5px;
+}
+#off{
+    color: #f50057;
+}
+#on{
+    display: none;
+    color: #08fdd8;
+}
 
 
+.scroll-down{
+    position: absolute;
+    right: -20px;
+    bottom: 3.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(90deg);
+    display: block;
+    font-size: 14px;
+    color: #fff;
+}
+.scroll-down--left{
+    left: -20px;
+    right: auto;
+    color: #ffffff;
+}
+.scroll-down span{
+    display: inline-block;
+    animation: scroll .5s linear infinite alternate-reverse;
+}
+
+
+@keyframes scroll{
+    0%{
+        transform: translateX(-7px);
+    }
+    100%{
+        transform: translateX(7px);
+    }
+}
+.scroll-down .fas{
+    transform: rotate(270deg);
+    margin-left: 10px;
+}
+
+/* FOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOTER */
 
 .new_footer_area {
     background: linear-gradient( rgb(235, 234, 234),rgb(48, 89, 102));
@@ -322,4 +389,9 @@ h4{
     font-weight: 900;
     color:#ffffff;
     letter-spacing: 1px;
+}
+
+h4:hover{
+    color: #000000;
+    transition: color 0.3s ease;
 }

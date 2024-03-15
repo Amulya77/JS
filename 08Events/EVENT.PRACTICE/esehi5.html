@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        /* Reset styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        /* Flex container */
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 5px;
+            padding: 20px;
+        }
+
+        /* Flex item */
+        .flex-item {
+            background-color: #fff;
+            border: 1px solid #1a1717;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            flex: 1 0 200px; /* Flex item will grow and shrink to fit container */
+            width: 200px; /* Set width */
+            height: 200px; /* Set height to make it square */
+        }
+
+        /* Hover effect */
+        .flex-item:hover {
+            transform: translateY(-5px); /* Adjust the distance */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <!-- Flex items representing projects -->
+        <div class="flex-item">Project 1</div>
+        <div class="flex-item">Project 2</div>
+        <div class="flex-item">Project 3</div>
+        <div class="flex-item">Project 1</div>
+        <div class="flex-item">Project 2</div>
+        <div class="flex-item">Project 3</div>
+        <div class="flex-item">Project 1</div>
+        <div class="flex-item">Project 2</div>
+        <div class="flex-item">Project 3</div>
+        <div class="flex-item">Project 1</div>
+        <div class="flex-item">Project 2</div>
+        
+        <div class="flex-item">Project 2</div>
+        <div class="flex-item">Project 3</div>
+        <!-- Add more flex items as needed -->
+    </div>
+</body>
+</html>

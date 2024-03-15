@@ -88,3 +88,50 @@ document.addEventListener("DOMContentLoaded", function() {
 //     }
 //     return color;
 // }
+
+
+const soundCloud = document.querySelector('.sound-cloud');
+const off = document.querySelector('#off');
+const on = document.querySelector('#on');
+const myAudio = document.querySelector('#myAudio');
+
+off.addEventListener('click', () => soundTrack('off'));
+on.addEventListener('click', () => soundTrack('on'));
+
+const soundTrack = (soundState) => {
+    if(soundState === 'off'){
+        on.style.display = 'block';
+        off.style.display = 'none';
+        soundCloud.style.color = "#08fdd8";
+        myAudio.play();
+    }
+    else if(soundState === 'on'){
+        on.style.display = 'none';
+        off.style.display = 'block';
+        soundCloud.style.color = "#f50057";
+        myAudio.pause();
+    }
+}
+
+
+
+// Add event listener to small-img-div to play sound when clicked
+// Add event listener to small-img-div to play sound when clicked and toggle sound button
+document.getElementById("small-img-div").addEventListener("click", function() {
+    const myAudio = document.querySelector('#myAudio');
+    const off = document.querySelector('#off');
+    const on = document.querySelector('#on');
+    const soundCloud = document.querySelector('.sound-cloud');
+    
+    if (myAudio.paused) {
+        myAudio.play();
+        off.style.display = 'none';
+        on.style.display = 'block';
+        soundCloud.style.color = "#08fdd8";
+    } else {
+        myAudio.pause();
+        on.style.display = 'none';
+        off.style.display = 'block';
+        soundCloud.style.color = "#f50057";
+    }
+});
