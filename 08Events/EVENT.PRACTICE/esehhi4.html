@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="essehistyle.css">
+</head>
+<body>
+    <div id="container">
+       
+        
+        
+        
+    </div>
+
+    <!-- <script>
+        // JavaScript to handle mouse enter event
+        document.getElementById("container").addEventListener("mousemove", function(event) {
+            // Get container dimensions
+            var container = event.target;
+            var containerRect = container.getBoundingClientRect();
+
+            // Calculate the middle 40%
+            var middle40Width = containerRect.width * 0.4;
+            var middle40Height = containerRect.height * 0.4;
+
+            var leftEdge = (containerRect.width - middle40Width) / 2;
+            var topEdge = (containerRect.height - middle40Height) / 2;
+            var rightEdge = leftEdge + middle40Width;
+            var bottomEdge = topEdge + middle40Height;
+
+            // Get mouse position relative to the container
+            var mouseX = event.clientX - containerRect.left;
+            var mouseY = event.clientY - containerRect.top;
+
+            // Change background color and print message if mouse is in the middle 40%
+            if (mouseX >= leftEdge && mouseX <= rightEdge && mouseY >= topEdge && mouseY <= bottomEdge) {
+                container.style.backgroundColor = "#87ceeb"; // Sky Blue
+                console.log("Mouse entered center 40% of the div.");
+            }
+        });
+    </script> -->
+
+    <script>
+        // JavaScript to handle mouse enter and leave events
+        document.getElementById("container").addEventListener("mousemove", function(event) {
+            var container = event.target;
+            var containerRect = container.getBoundingClientRect();
+
+            // Calculate the middle 40%
+            var middle40Width = containerRect.width * 0.4;
+            var middle40Height = containerRect.height * 0.4;
+
+            var leftEdge = (containerRect.width - middle40Width) / 2;
+            var topEdge = (containerRect.height - middle40Height) / 2;
+            var rightEdge = leftEdge + middle40Width;
+            var bottomEdge = topEdge + middle40Height;
+
+            // Get mouse position relative to the container
+            var mouseX = event.clientX - containerRect.left;
+            var mouseY = event.clientY - containerRect.top;
+
+            // Change background color if mouse is in the middle 40%
+            if (mouseX >= leftEdge && mouseX <= rightEdge && mouseY >= topEdge && mouseY <= bottomEdge) {
+                container.classList.add("hover");
+                console.log("Mouse entered center 40% of the div.");
+            } else {
+                container.classList.remove("hover");
+                console.log("Mouse left center 40% of the div.");
+            }
+        });
+    </script>
+</body>
+
+</html>

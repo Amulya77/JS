@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+#container{
+    width : 300px;
+    height: 300px;
+    background-color: #740000;
+}
+
+#container.hover {
+    background-color: #87ceeb; /* Sky Blue */
+}
+
