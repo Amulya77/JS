@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    /* background-color: hsl(345.6deg 16.13% 69.61%); */
+    background-color: rgb(48, 89, 102);
+    display: flex;
+}
+
+#part1 {
+    height: 100%;
+    width: 26%;
+}
+
+#part2 {
+    height: 100%;
+    width: 67%;
+    background-color: aqua;
+   
+    background-image: url('./wallpapersden.com_ultra-goku-cool-2020-minimal_3840x2160.jpg');
+    background-size: cover; /* Ensures the background image covers the entire element */
+    background-position: center; /* Centers the background image */
+    
+}
+
+#overlay{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(74, 168, 200, 0.215);
+}
+
+
+
+#part3 {
+    height: 100%;
+    width: 7%;
+}
+
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+ @keyframes leftright {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(20px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+
+#text-div{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    /* background-color: rgb(74, 168, 200); */
+    left:20%;
+    top:35%;
+    transform: translate(1, -50%);
+    margin: 0;
+    padding: 0;
+}
+
+#text-div>h1{
+    color: white;
+    letter-spacing: 7px;
+    font-size: 60px;
+    font-family: sans-serif;
+    line-height: 58px;
+    font-weight: 900;
+    animation:  slideInLeft 2s ease forwards; 
+    /* animation: leftright 1s ease infinite; */
+    animation-delay: 0.5s; /* Adjust delay for each text */
+}
+
+
+
+
+
+#small-img-div{
+    position: absolute;
+    height: 300px;
+    width: 400px;
+    background-color: rgb(220, 246, 255);
+    background-image: url('./goku-2.jpg');
+    background-size: cover; /* Ensures the background image covers the entire element */
+    background-position: center; /* Centers the background image */
+    /* border-radius: 50%; */
+    top:34%;
+    right: 5%;
+}
+
+
+/* @keyframes slideUpDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+#vertical-text{
+    position:absolute;
+    /* width: 100%; */
+    /* background-color: aqua; */
+    /* right: 1%;  
+    top: 5%;  
+    transform-origin: 0% 0%;
+    animation: slideUpDown 3s ease infinite;
+} */ 
+
+ @keyframes scrollUp {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+#vertical-text {
+    position: absolute;
+    right: 1%;
+    top: 5%;
+    transform-origin: 0% 0%;
+    animation: scrollUp 10s linear infinite;
+} 
+
+
+#vertical-text>h1{
+    writing-mode: vertical-rl;
+    /* transform: rotate(90deg); */
+    color: transparent;
+    letter-spacing: 10px;
+    font-size: 60px;
+    font-family: sans-serif;
+    line-height: 58px;
+    font-weight: 900;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
+} 
+
+
+
+
+
+#nav{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 350px;
+    left: 19%;
+    top: 5%;
+}
+
+#nav img{
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+#nav h5{
+    font-size:10px;
+    font-family: sans-serif;
+    color: #fff;
+}
