@@ -1,12 +1,29 @@
+
+
+
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
+h1{
+    color: #fff;
+    
+}
+
 html, body {
     height: 100%;
     width: 100%;
+    overflow: hidden;
+}
+
+
+h1{
+    font-family: "Cedarville Cursive", cursive;
 }
 
 #main {
@@ -26,7 +43,8 @@ html, body {
     height: 100%;
     width: 67%;
     background-color: aqua;
-   
+    
+
     background-image: url('./wallpapersden.com_ultra-goku-cool-2020-minimal_3840x2160.jpg');
     background-size: cover; /* Ensures the background image covers the entire element */
     background-position: center; /* Centers the background image */
@@ -101,6 +119,7 @@ html, body {
 
 
 #small-img-div{
+    cursor: pointer;
     position: absolute;
     height: 300px;
     width: 400px;
@@ -152,10 +171,12 @@ html, body {
     top: 5%;
     transform-origin: 0% 0%;
     animation: scrollUp 10s linear infinite;
+    white-space: nowrap; /* Ensure the text stays on one line */
 } 
 
 
 #vertical-text>h1{
+    cursor: pointer;
     writing-mode: vertical-rl;
     /* transform: rotate(90deg); */
     color: transparent;
