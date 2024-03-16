@@ -31,6 +31,12 @@
         "list": "off"
       }
     ],
-    "disown-opener": "off"
+    "disown-opener": "off",
+    "axe/parsing": [
+      "default",
+      {
+        "duplicate-id-active": "off"
+      }
+    ]
   }
 }
