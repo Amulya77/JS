@@ -11,26 +11,27 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-
+  
     <div id="main">
         <div id="nav">
             <!-- <img src="https://www.chungiyoo.com/img/faces/smile%2001.svg" alt="smilie"> -->
-            <h1 class="text-5xl font-bold" style="font-family: Cedarville Cursive, cursive;">Am</h1>
-            <h5>SON GOKU</h5>
-            <h5><a href="#" target="_self">PORTFOLIO</a></h5>
+            <h1><a href="#" class="text-5xl font-bold" style="font-family: Cedarville Cursive, cursive;">Am</a></h1>
+            <h5><a href="https://www.crunchyroll.com/series/G9VHN9PPW/dragon-ball-z" target="_self">SON GOKU</a></h5>
+            <h5><a href="#" target="_self" onclick="scrollToProjects()">PORTFOLIO</a></h5>
+            <h5><a href="#" target="_self" onclick="scrollToAbout()">ABOUT</a></h5>
             <h5><a href="./contacts.html" target="_self">CONTACT ME</a></h5>
-            <h5>RESUME</h5>
+            <h5><a href="https://drive.google.com/file/d/1lgRlOJl6R31Tw2ulhih5KV4R9yP8jzZz/view" target="_self">RESUME</a></h5>
             <div id="sound">
-                <audio id="myAudio">
-                    <source src="./Night.mp3" type="audio/mpeg">  
-                </audio>
-                <!-- <i class="fab fa-soundcloud sound-cloud"></i> -->
-                <span>Sound</span>
-                <div class="on-off">
-                    <span id="off">OFF</span>
-                    <span id="on">On</span>
-                </div>
-            </div>
+              <audio id="soundTrack">
+                  <source src="./Night.mp3" type="audio/mpeg">  
+              </audio>
+              <span style="font-family: sans-serif; font-size:10px;">SOUND</span>
+              <div class="on-off">
+                  <span id="off">OFF</span>
+                  <span id="on">ON</span>
+              </div>
+          </div>
+          
         </div>
         <div id="part1"></div>
         <div id="part2">
@@ -50,7 +51,7 @@
         </div>
 
         <div id="vertical-text">
-            <h1> GOKU IS THE GREATEST OF ALL TIME.I AM AMULYA. <span style="-webkit-text-stroke-color: rgb(0, 0, 0);">LEARNING REACT-JS AND NEXT-JS </span></h1>
+            <h1> GOKU IS THE GREATEST OF ALL TIME. AMULYA|2024 . <span style="-webkit-text-stroke-color: rgb(0, 0, 0);">LEARNING REACT-JS AND NEXT-JS </span></h1>
         </div>
         <div class="scroll-down">
             <span>scroll down</span>
@@ -64,7 +65,7 @@
     </div>
 
     <div id="page-down" style="font-size: large; background: linear-gradient(rgb(48, 89, 102), rgb(235, 234, 234)); color: rgb(0, 0, 0);">
-        <h1>SCROLL DOWN</h1>
+        <h1 style="font-family: Arial, Helvetica, sans-serif; letter-spacing: 10px;">AMULYA MAURYA &copy 2024</h1>
         <br>
         <br>
         <h1 style="display: flex; justify-content: center; font-size: xx-large; font-family: sans-serif;">PROJECTS<hr/></h1>
@@ -98,7 +99,7 @@
         <section class="text-gray-600 body-font">
             <div class="container px-5 py-24 mx-auto">
               <div class="flex flex-wrap -m-4">
-                <div class="p-4 md:w-1/3">
+                <div class="p-4 md:w-1/3 hover:bg-cyan-700">
                   <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                     <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="./images/Portfolio.png" alt="blog">
                     <div class="p-6">
@@ -112,22 +113,13 @@
                             <path d="M12 5l7 7-7 7"></path>
                           </svg>
                         </a>
-                        <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                          <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                            <circle cx="12" cy="12" r="3"></circle>
-                          </svg>1.2K
-                        </span>
-                        <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                          <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                            <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                          </svg>6
-                        </span>
+                        
+                        
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="p-4 md:w-1/3">
+                <div class="p-4 md:w-1/3 hover:bg-cyan-700">
                   <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                     <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="./images/Bankify.png" alt="blog">
                     <div class="p-6">
@@ -143,22 +135,12 @@
                             <path d="M12 5l7 7-7 7"></path>
                           </svg>
                         </a>
-                        <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                          <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                            <circle cx="12" cy="12" r="3"></circle>
-                          </svg>1.2K
-                        </span>
-                        <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                          <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                            <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                          </svg>6
-                        </span>
+                        
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="p-4 md:w-1/3">
+                <div class="p-4 md:w-1/3 hover:bg-cyan-700">
                   <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                     <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="./images/AIR-ILLUSTRATOR.png" alt="blog">
                     <div class="p-6">
@@ -172,22 +154,12 @@
                             <path d="M12 5l7 7-7 7"></path>
                           </svg>
                         </a>
-                        <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                          <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                            <circle cx="12" cy="12" r="3"></circle>
-                          </svg>1.2K
-                        </span>
-                        <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                          <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                            <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                          </svg>6
-                        </span>
+                        
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="p-4 md:w-1/3">
+                <div class="p-4 md:w-1/3 hover:bg-cyan-700">
                     <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                       <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="./images/Guess-game2.png" alt="blog">
                       <div class="p-6">
@@ -201,51 +173,31 @@
                               <path d="M12 5l7 7-7 7"></path>
                             </svg>
                           </a>
-                          <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                            <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                              <circle cx="12" cy="12" r="3"></circle>
-                            </svg>1.2K
-                          </span>
-                          <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                            <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                              <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                            </svg>6
-                          </span>
+                          
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="p-4 md:w-1/3">
+                  <div class="p-4 md:w-1/3 hover:bg-cyan-700">
                     <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                       <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="./images/pig-game.png" alt="blog">
                       <div class="p-6">
                         <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">GAME</h2>
-                        <h1 class="title-font text-lg font-medium text-gray-900 mb-3">DICE-ROLL PIG-GAME</h1>
+                        <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Dice-Roll Pig-Game</h1>
                         <p class="leading-relaxed mb-3 text-white">Roll the dice and the score adds to the player's score till holding the value!</p>
                         <div class="flex items-center flex-wrap ">
-                          <a class="text-white inline-flex items-center md:mb-2 lg:mb-0">Learn More
+                          <a href="https://amulya77.github.io/Dice-roll/" class="text-white inline-flex items-center md:mb-2 lg:mb-0">Learn More
                             <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                               <path d="M5 12h14"></path>
                               <path d="M12 5l7 7-7 7"></path>
                             </svg>
                           </a>
-                          <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                            <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                              <circle cx="12" cy="12" r="3"></circle>
-                            </svg>1.2K
-                          </span>
-                          <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                            <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                              <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                            </svg>6
-                          </span>
+                          
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="p-4 md:w-1/3">
+                  <div class="p-4 md:w-1/3 hover:bg-cyan-600">
                     <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                       <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="./images/many-more.png" alt="blog">
                       <div class="p-6">
@@ -253,19 +205,19 @@
                         <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Other Websites</h1>
                         <p class="leading-relaxed mb-3 text-white">My Github Contains more than 20+ Vanilla JS projests along with REACT-JS projects upcoming</p>
                         <div class="flex items-center flex-wrap ">
-                          <a class="text-white inline-flex items-center md:mb-2 lg:mb-0">Learn More
+                          <a href="https://github.com/Amulya77?tab=repositories" class="text-white inline-flex items-center md:mb-2 lg:mb-0">Learn More
                             <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                               <path d="M5 12h14"></path>
                               <path d="M12 5l7 7-7 7"></path>
                             </svg>
                           </a>
-                          <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                          <span class="text-white mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
                             <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
                               <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
                               <circle cx="12" cy="12" r="3"></circle>
                             </svg>1.2K
                           </span>
-                          <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                          <span class="text-white inline-flex items-center leading-none text-sm">
                             <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
                               <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
                             </svg>6
@@ -279,10 +231,9 @@
           </section>
 
             <br>
-            <br>
-            <br>
 
-            <h1 style="display: flex; justify-content: center; font-size: xx-large; font-family: sans-serif ;">ABOUT</h1>
+            <h1 id=about style="display: flex; justify-content: center; font-size: xx-large; font-family: sans-serif ;">ABOUT</h1>
+            <br>
             
             <p style="font-size: xx-large; letter-spacing:5px;font-weight: bold; line-height: 58px; ">NAMASTEY, I AM A COMPUTER SCIENCE GRAD STUDENT AND UPCOMING WEB DEVELOPER AT CHANDIGARH UNIVERSITY
                 I ALWAYS STRIVE TO BRING 100% TO THE WORK I DO.
@@ -307,22 +258,27 @@
                 IN SOFTWARE ENGINEERING, WHICH PROVIDES PROFESSIONAL DEVELOPMENT, INTERESTING EXPERIENCES, AND PERSONAL GROWTH.
             </span>
             </p>
-
-
+            <br>
+            <div class="flex justify-center items-center py-4">
+              <a href="https://drive.google.com/file/d/1lgRlOJl6R31Tw2ulhih5KV4R9yP8jzZz/view" class="block">
+                <button class="bg-transparent border-2 border-black text-blue-500 px-4 py-2 text-lg rounded-md transition duration-300 hover:bg-teal-600 hover:text-white">RESUME</button>
+              </a>
+            </div>
+            
             <br>
             <br>
             <br>
 
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, repudiandae quo! Ex perspiciatis explicabo temporibus incidunt hic ullam. Dolorum optio alias omnis pariatur fugit dignissimos consequuntur perspiciatis nesciunt ea. Pariatur.
-            Quisquam doloremque minima voluptatibus molestias libero nesciunt! Aperiam quas pariatur modi quis saepe molestiae, reprehenderit minima iusto eligendi laboriosam iure ullam explicabo nemo quos error? Esse, doloribus officia? Laboriosam, ex?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, repudiandae quo! Ex perspiciatis explicabo temporibus incidunt hic ullam.<span style="font-size:40px;">I know JAVASCRIPT.</span> Dolorum optio alias omnis pariatur fugit dignissimos consequuntur perspiciatis nesciunt ea. Pariatur.
+            <span style="font-size:40px;">I live in Mohali.</span> Aperiam quas pariatur modi quis saepe molestiae, reprehenderit minima iusto eligendi laboriosam iure ullam explicabo nemo quos error? Esse, doloribus officia? Laboriosam, ex?
             Cumque praesentium nostrum in reiciendis cupiditate reprehenderit maxime libero iste, sapiente nisi saepe recusandae id consequuntur quos laboriosam architecto atque dicta deserunt nihil dignissimos ratione consequatur error est earum? Repudiandae!
-            Neque quas, at tempore cum reiciendis quia harum blanditiis amet obcaecati, sunt, quos illum! Vero necessitatibus sunt nulla? Hic at distinctio eos sunt dignissimos itaque cupiditate corrupti laboriosam neque nam?
-            Voluptatibus vel rerum eligendi rem porro blanditiis ratione, sed assumenda! Repellendus quidem aliquam ratione, at explicabo velit hic sequi ut, alias accusamus vitae quod tempore molestiae tempora unde, autem nisi!
-            Numquam aliquid minima facilis iure, eaque deserunt magnam, labore aliquam molestiae ab in voluptate totam minus, assumenda similique quibusdam libero tempore! Dolorum voluptates consequuntur neque, maxime iure ullam doloremque praesentium.
-            Harum itaque tenetur, rem, deserunt soluta molestias similique expedita veritatis ipsum doloribus in temporibus! Voluptatem sint quod excepturi illum deserunt fugit distinctio similique reiciendis dolore. Ipsum quo iusto reiciendis nostrum.
-            Doloribus aperiam expedita consequuntur quo corrupti quos, officia pariatur id corporis? Dignissimos aspernatur fugiat ad expedita, ducimus illum et porro suscipit dolore maxime enim consequatur vero laudantium quo deleniti sit!
-            Laboriosam corporis incidunt atque fugit dolorem nostrum est vel autem vero voluptatem quas nulla veniam perspiciatis pariatur itaque dolore, quidem recusandae magnam consequuntur ex. Iste tempore saepe repudiandae expedita nemo?
-            Nam nisi commodi saepe dolorem, praesentium beatae alias dicta tempora explicabo soluta? Quam in quibusdam nesciunt, doloribus quisquam, repellat rem laborum tenetur assumenda officia aut illum ducimus blanditiis mollitia reiciendis.
+            dsajd,<span style="font-size:40px;">I love Harry Potter</span>, sunt, quos illum! Vero necessitatibus sunt nulla? Hic at distinctio eos sunt dignissimos itaque cupiditate corrupti laboriosam neque nam?
+            Voluptatibus vel rerum eligendi rem porro blanditiis ratione, sed assumenda! Repellendus quidem aliquam ratione, autem nisi!
+            Numquam aliquid minima facilis iure, labore aliquam molestiae ab in voluptate totam minus, assumenda similique quibusdam libero tempore! Dolorum voluptates consequuntur neque, maxime iure ullam doloremque praesentium.
+            Harum itaque tenetur, rem, deserunt soluta molestias similique expedita veritatis ipsum doloribus in temporibus! <span style="font-size:40px;">I am learning REACT-JS & NEXT-JS</span> Voluptatem sint quod excepturi illum deserunt fugit distinctio similique reiciendis dolore. Ipsum quo iusto reiciendis nostrum.
+            Dignissimos aspernatur fugiat ad expedita, ducimus illum et porro suscipit dolore maxime enim consequatur vero laudantium quo deleniti sit!
+            Laboriosam corporis incidunt atque fugit dolorem nostrum est vel autem vero voluptatem quas nulla veniam perspiciatis pariatur itaque dolore, quidem recusandae magnam consequuntur ex. Iste tempore saepe<span style="font-size:40px;">I do Digital Arts too!!</span> repudiandae expedita nemo?
+            Nam nisi commodi saepe dolorem, praesentium beatae alias dicta tempora explicabo soluta? ipsum doloribus Quam in quibusdam nesciunt, doloribus quisquam, repellat rem laborum tenetur assumenda officia aut illum ducimus blanditiis mollitia reiciendis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus ut harum quam porro quibusdam, vitae hic velit molestiae voluptates odio mollitia repellendus natus ipsum, possimus eos, in maxime pariatur fugit!
         
 
         
@@ -330,7 +286,7 @@
 
     
 
-<footer>
+<footer >
 
     <div class="new_footer_area">
     <div class="new_footer_top">
@@ -348,9 +304,36 @@
         <h5><a href="./contacts.html" target="_self">CONTACT-ME</a></h5>
     </div>
 
-   
+  
 
 </footer>
+
+
+<section>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+</section>
+
+
+
 
     <script src="script copy 2.js"></script>
 </body>

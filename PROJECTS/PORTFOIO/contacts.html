@@ -76,21 +76,75 @@
                 color: #fff;
             }
 
-      
+            .circle {
+                height: 24px;
+                width: 24px;
+                border-radius: 24px;
+                background-color: black;
+                position: fixed; 
+                top: 0;
+                left: 0;
+                pointer-events: none;
+                z-index: 99999999; /* so that it stays on top of all other elements */
+              }
 
+              @media screen and (max-width: 600px) {
+    
+                 
+                  #nav {
+                    color: rgb(255, 255, 255);
+                    display: flex;
+                    /* flex-direction: column; */
+                    position: absolute;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 100%;
+                    left: 0;
+                    top: 2%;
+                    padding: 1.5%;
+                  }
+                  .circle {
+                    display: none; /* so that it stays on top of all other elements */
+                  }
+                  
+                  #fmenu {
+                      position: static; /* Remove absolute positioning */
+                      flex-direction: column; /* Stack items vertically */
+                      align-items: flex-start; /* Align items to the start */
+                      padding: 20px; /* Add padding for spacing */
+                      background-color: rgb(48, 89, 102);
+                  }
+
+                  #fmenu h5 {
+                      font-size: 20px; /* Decrease font size for smaller screens */
+                      margin: 5px 0; /* Add margin for spacing between items */
+                  }
+
+                  #fmenu h4 {
+                      font-size: 24px; /* Decrease font size for smaller screens */
+                      padding-left: none;
+                      padding-right: none;
+                  }
+
+                  .px4{
+                      padding-left: none;
+                      padding-right: none;
+                  }
+
+  }
             
     </style>
 </head>
 <body>
     
 
-    <section class="text-gray-600 body-font relative bg-gradient-to-b from-cyan-800 to-gray-200">
+    <section class="text-white body-font relative bg-gradient-to-b from-cyan-800 to-gray-200">
         <div id="nav">
-            <h1 class="text-5xl font-bold " style="font-family: Cedarville Cursive, cursive;color:white;">Am</h1>
-            <h5>SON GOKU</h5>
-            <h5><a href="./index copy 2.html" target="_self">PORTFOLIO</a></h5>
-            <h5><a href="./contacts.html" target="_self">CONTACT ME</a></h5>
-            <h5>RESUME</h5>    
+          <h1><a href="./index copy 2.html" class="text-5xl font-bold" style="font-family: Cedarville Cursive, cursive;">Am</a></h1>
+          <h5><a href="https://www.crunchyroll.com/series/G9VHN9PPW/dragon-ball-z" target="_self">SON GOKU</a></h5>
+          <h5><a href="./index copy 2.html" target="_self">PORTFOLIO</a></h5>
+          <h5><a href="./contacts.html" target="_self">CONTACT ME</a></h5>
+          <h5><a href="https://drive.google.com/file/d/1lgRlOJl6R31Tw2ulhih5KV4R9yP8jzZz/view" target="_self">RESUME</a></h5>   
         </div>
         <div class="container px-5 py-20 mx-auto flex sm:flex-nowrap flex-wrap">
           <div class="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
@@ -100,13 +154,13 @@
             <div class="bg-white relative flex flex-wrap py-6 rounded shadow-md">
               <div class="lg:w-1/2 px-6">
                 <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">ADDRESS</h2>
-                <p class="mt-1">Flat-26C New Town Apartments Gharuan, Near Chandigarh University</p>
+                <p class="mt-1 text-black ">Flat-26C New Town Apartments Gharuan, Near Chandigarh University</p>
               </div>
               <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
                 <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">EMAIL</h2>
-                <a class="text-indigo-500 leading-relaxed">mauryaamulya@email.com</a>
+                <a class="text-cyan-800 leading-relaxed">mauryaamulya@email.com</a>
                 <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">PHONE</h2>
-                <p class="leading-relaxed">6393490543</p>
+                <p class="text-cyan-800 leading-relaxed">6393490543</p>
               </div>
             </div>
           </div>
@@ -134,14 +188,37 @@
 
 <footer>
    
-    <div id="fmenu" class="hover:bg-teal-600 bg-gradient-to-b from-gray-200 to-cyan-800">        
+    <div id="fmenu" class="bg-gradient-to-b from-gray-200 to-cyan-800">        
         <h4 class="text-5xl font-bold px-4 py-5" style="font-family: Cedarville Cursive, cursive;"><a href="mailto:Mauryaamulya@gmail.com">Mauryaamulya@gmail.com</a></h4>       
         <h5><a href="https://www.linkedin.com/in/amulya-maurya-25b8621bb/" target="_blank">LINKEDIN</a></h5>
         <h5><a href="https://github.com/Amulya77" target="_blank">GITHUB</a></h5>
         <h5><a href="#" target="_self">CONTACT-ME</a></h5>
     </div>
     
-    <button id="contact-button" class="text-white bg-cyan-800 border-0 py-2 px-6 focus:outline-none hover:bg-teal-600 rounded text-lg">Message Me</button>
+    <!-- <button id="contact-button" class="text-white bg-cyan-800 border-0 py-2 px-6 focus:outline-none hover:bg-teal-600 rounded text-lg">Message Me</button> -->
+</footer>
+<section>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+</section>
 
 <script>
     document.getElementById("contact-button").addEventListener("click", function() {
@@ -162,9 +239,112 @@
         link.href = mailtoLink;
         link.click();
     });
+
+
+
+    /***************************/
+    
+const coords = { x: 0, y: 0 };
+const circles = document.querySelectorAll(".circle");
+
+const colors = [
+  "#ffb56b",
+  "#fdaf69",
+  "#f89d63",
+  "#f59761",
+  "#ef865e",
+  "#ec805d",
+  "#e36e5c",
+  "#df685c",
+  "#d5585c",
+  "#d1525c",
+  "#c5415d",
+  "#c03b5d",
+  "#b22c5e",
+  "#ac265e",
+  "#9c155f",
+  "#950f5f",
+  "#830060",
+  "#7c0060",
+  "#680060",
+  "#60005f",
+  "#48005f",
+  "#3d005e"
+];
+
+// const colors = [
+//     "#69c8d6",
+//     "#61c3d1",
+//     "#59becb",
+//     "#50b9c6",
+//     "#47b4c1",
+//     "#3eafbc",
+//     "#35aab6",
+//     "#2ca5b1",
+//     "#24a0ac",
+//     "#1b9ba7",
+//     "#1296a1",
+//     "#09919c",
+//     "#008b97",
+//     "#008493",
+//     "#007e8e",
+//     "#007989",
+//     "#007484",
+//     "#006f7f",
+//     "#006a7a",
+//     "#006575",
+//     "#005f70",
+//     "#005a6b"
+//   ];
+  
+circles.forEach(function (circle, index) {
+  circle.x = 0;
+  circle.y = 0;
+  circle.style.backgroundColor = colors[index % colors.length];
+});
+
+window.addEventListener("mousemove", function(e){
+  coords.x = e.clientX;
+  coords.y = e.clientY;
+  
+});
+
+function animateCircles() {
+  
+  let x = coords.x;
+  let y = coords.y;
+  
+  circles.forEach(function (circle, index) {
+    circle.style.left = x - 12 + "px";
+    circle.style.top = y - 12 + "px";
+    
+    circle.style.scale = (circles.length - index) / circles.length;
+    
+    circle.x = x;
+    circle.y = y;
+
+    const nextCircle = circles[index + 1] || circles[0];
+    x += (nextCircle.x - x) * 0.3;
+    y += (nextCircle.y - y) * 0.3;
+  });
+ 
+  requestAnimationFrame(animateCircles);
+}
+
+animateCircles();
+
+
+// /************************two ***************************************/
+// /*--------------------
+// Utils
+// --------------------*/
+
+
+
+    
 </script>
 
     
-</footer>
+
 </body>
 </html>

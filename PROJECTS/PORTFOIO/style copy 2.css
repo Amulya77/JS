@@ -439,4 +439,138 @@ h4:hover{
 }
 
 
+/***********************cursor*******************/
+.circle {
+    height: 24px;
+    width: 24px;
+    border-radius: 24px;
+    background-color: black;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 99999999; /* so that it stays on top of all other elements */
+  }
+
+
+
+
 /**********************projects*****************/
+
+@media screen and (max-width: 600px) {
+    
+    #nav {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        left: 0; /* Position the nav on the leftmost side */
+        top: 5%;
+    }
+      
+      /* #nav h1 {
+        margin-bottom: 10px; /* Adjust margin between items */
+      
+    
+      /* #nav h5 {
+        margin-bottom: 5px; /* Adjust margin between items 
+      } */
+
+    #small-img-div {
+        cursor: pointer;
+        position: absolute;
+        height: 120px;
+        width: 160px;
+    }
+    #small-img-div:hover {
+        height: 165px;
+        width: 220px;
+        border: #fff solid 2px;
+    } 
+
+    .circle {
+        display: none; /* so that it stays on top of all other elements */
+      }
+    
+    /* #small-img-div {
+        cursor: pointer;
+        position: absolute;
+        height: 300px;
+        width: 400px;
+        background-color: rgb(220, 246, 255);
+        background-image: url(./goku-2.jpg);
+        background-size: cover;
+        background-position: center;
+        /* border-radius: 50%; */
+        /* top: 34%; */
+       
+    /* } */ *
+
+    #part2 {
+        height: 100%;
+        width: 67%;
+        background-color: aqua;
+        background-image: url(./wallpapersden.com_ultra-goku-cool-2020-minimal_3840x2160.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    #text-div{
+        position: absolute;
+        height: 300px;
+        width: 300px;
+        /* background-color: rgb(74, 168, 200); */
+        left: 2%;
+        top: 35%;
+        transform: translate(1, -50%);
+        margin: 0;
+        padding: 0;
+    }
+
+    #text-div>h1{
+        color: white;
+        letter-spacing: 3.5px;
+        font-size: 30px;
+        font-family: sans-serif;
+        line-height: 29px;
+        font-weight: 900;
+        
+       
+    }
+
+    #fmenu {
+        position: static; /* Remove absolute positioning */
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the start */
+        padding: 20px; /* Add padding for spacing */
+        background-color: rgb(48, 89, 102);
+    }
+
+    #fmenu h5 {
+        font-size: 20px; /* Decrease font size for smaller screens */
+        margin: 5px 0; /* Add margin for spacing between items */
+    }
+
+    #fmenu h4 {
+        font-size: 24px; /* Decrease font size for smaller screens */
+        padding-left: none;
+        padding-right: none;
+    }
+
+    .px4{
+        padding-left: none;
+        padding-right: none;
+    }
+    
+    
+}
+  
+@media screen and (max-width: 1200px) {
+    /* Adjust styles for smaller screens here */
+}
+
+@media screen and (max-width: 992px) {
+    /* Adjust styles for medium-sized screens here */
+}
