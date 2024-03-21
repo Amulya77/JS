@@ -33,11 +33,12 @@
 
 <script>
     const circles = document.querySelectorAll('.circle');
+    const parent_text=document.querySelector('.toggle_container');
 
 circles.forEach(circle => {
     circle.addEventListener('click', function() {
         const oval = this.parentElement;
-        const parent_text=document.querySelector('.toggle_container');
+        
         if (this.style.marginLeft !== 'auto') {
             // Move circle to the right side inside the oval
             this.style.marginLeft = 'auto';
