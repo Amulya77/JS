@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>TOGGLE_BUTTON</h1>
+    <div class="toggle_container">
+        <div class="oval">
+            <div class="circle"></div>
+        </div>
+        Button 1
+    </div>
+    <div class="toggle_container">
+        <div class="oval">
+            <div class="circle"></div>
+        </div>
+        Button 2
+    </div>
+    <div class="toggle_container">
+        <div class="oval">
+            <div class="circle"></div>
+        </div>
+        Button 3
+    </div>
+    
+</body>
+    
+
+<script>
+    const circles = document.querySelectorAll('.circle');
+
+circles.forEach(circle => {
+    circle.addEventListener('click', function() {
+        const oval = this.parentElement;
+        const parent_text=document.querySelector('.toggle_container');
+        if (this.style.marginLeft !== 'auto') {
+            // Move circle to the right side inside the oval
+            this.style.marginLeft = 'auto';
+            // Change background color to skyish-darkish blue
+            this.style.backgroundColor = 'rgb(46, 88, 148)';
+            // Change oval background color to sky blue
+            oval.style.backgroundColor = 'SkyBlue';
+            // Change text color of the toggle container
+            parent_text.style.color = 'green';
+        } else {
+            // Reset circle to original position and color
+            this.style.marginLeft = '';
+            this.style.backgroundColor = 'rgb(148, 147, 147)';
+            // Reset oval background color to default
+            oval.style.backgroundColor = '#e9e9e9';
+            // Reset text color of the toggle container
+            parent_text.style.color = ''; // Reset to default
+        }
+    });
+});
+</script>
+</html>
