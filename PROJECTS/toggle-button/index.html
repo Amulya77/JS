@@ -35,7 +35,12 @@
         circle.addEventListener('click', function() {
             const oval = this.parentElement;
             const parent = this.parentElement.parentElement;
-            if (this.style.marginLeft !== 'auto') {
+
+            // Get the computed style of the circle
+            const computedStyle = window.getComputedStyle(this);
+            const marginLeft = computedStyle.getPropertyValue('margin-left');
+
+            if (marginLeft !== 'auto') {
                 // Move circle to the right side inside the oval
                 this.style.marginLeft = 'auto';
                 // Change background color to skyish-darkish blue
@@ -56,5 +61,6 @@
         });
     });
 </script>
+
 </body>
 </html>
