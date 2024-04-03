@@ -7,6 +7,10 @@
 body{
     font-family: 'Poppins', sans-serif;
     background: #52b3e1;
+    
+        /* overflow-y: hidden; */
+    
+    
 }
 
 .add {
@@ -76,3 +80,45 @@ body{
 }
 
 
+footer {
+    position: fixed;
+    bottom: 0;
+    /* height: 20px; */
+    width: 100%;
+    background-color: #3333331b; /* Adjust as per your design */
+    color: #fff; /* Adjust text color */
+    padding: 0.2rem; /* Adjust padding as needed */
+    text-align: center; /* Center align text */
+}
+
+
+
+/* Add these styles for smaller screens (e.g., smartphones) */
+@media only screen and (max-width: 767px) {
+    .container {
+      /* margin-top: 2rem; Adjusted top margin for smaller screens */
+      height: auto; /* Remove fixed height */
+    }
+  
+    .note {
+      width: 80%; /* Make notes occupy full width */
+      margin-bottom: 1rem; /* Add some space between notes */
+      margin-left: 1.5rem;
+      padding: 1rem; /* Add padding for better spacing */
+      box-sizing: border-box; /* Include padding in width calculation */
+    }
+  
+    .textarea {
+      width: calc(100% - 1px); /* Adjust width to fit container with padding */
+      /* height: 150px; Adjust height for better display on smaller screens */
+    }
+  }
+  
+  /* Add these styles for landscape orientation on smartphones */
+  @media only screen and (max-width: 767px) and (orientation: landscape) {
+    .textarea {
+      height: 100px; /* Adjust height for better display in landscape mode */
+    }
+  }
+  
+  
